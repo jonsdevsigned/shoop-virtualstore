@@ -1,0 +1,106 @@
+@import url(./root.css);
+
+body{
+    background: var(--background);
+    padding: 1.5rem 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 5rem;
+    background: linear-gradient(45deg, #283618, #648b33, #283618);
+    background-size: 500%;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: brillo 20s infinite;
+}
+
+@keyframes brillo {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+}
+
+a {
+    color: var(--background);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 2rem;
+    width: 12rem;
+}
+
+/* footer style */
+
+.publicity {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_image {
+    width: 2.2rem;
+    margin: 0 .3rem 0 0
+}
+
+.jons {
+    font-family: var(--font-logo-urbanist);
+    font-weight: 900;
+    color: #6FD72B;
+}
+
+.dev {
+    font-family: var(--font-logo-urbanist);
+    font-weight: 600;
+    color: #00B3FF;
+}
+
+.signed {
+    font-family: var(--font-logo-urbanist);
+    color: #00B3FF;   
+}
+
+.developer {
+    font-family: var(--font-logo-inter);
+    font-size: .85rem;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+
+    body{
+        padding: 1.5rem 5rem;
+    }
+
+    header {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    a{
+        margin: 0;
+    }
+}

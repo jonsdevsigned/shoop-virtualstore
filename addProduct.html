@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/addProduct.css">
+    <title>Shoop ~ add product</title>
+</head>
+<body class="add__product">
+    <div>
+        <h2>add product</h2>
+        <form action="">
+            <div>
+                <label for="name">Product</label>
+                <input type="text" id="name" name="name" required/>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="1" maxlength="280" required></textarea>
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" required/>
+            </div>
+            <div>
+                <label for="image">Image</label>
+                <input type="url" id="image" name="image" required>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+        
+        <a href="./index.html"><i class="fa-solid fa-hand-point-left"></i> back</a>
+    </div>
+
+    <footer>
+        <div class="publicity">
+            <img src="./assets/img/jonsdesigned-web.png" alt="Logo de jonsdevsigned" class="logo_image">
+            <span class="jons">Jons</span><span class="dev">dev</span><span class="signed">signed</span>
+        </div>
+        <p class="developer">John Forero - 2024</p>
+    </footer>
+</body>
+</html>

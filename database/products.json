@@ -1,0 +1,10 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "ref": "Tarjetas básicas",
+            "description": "Su tamaño es de 9x5,5, full color por las dos caras y plastificado brillante",
+            "valor": 80
+        }
+    ]
+}

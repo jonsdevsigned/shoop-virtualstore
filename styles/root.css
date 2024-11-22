@@ -1,0 +1,32 @@
+/* links */
+@import url(./reset.css);
+@import url(./styles.css);
+@import url(./boxProduct.css);
+@import url(./addProduct.css);
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+    /* colors */
+    --gradient: linear-gradient(180deg, #FEFAE0, #faf4cb, #e4ddae, #DDA15E);
+    --background: #FEFAE0;
+    --title-color: #283618;
+    --primary-color: #BC6C25;
+    --secondary-color: #DDA15E;
+    --tertiary-color: #606C38;
+    
+
+    /* fonts */
+    --title-font: "Anton", sans-serif;
+    --primary-font: "Gemunu Libre", sans-serif;
+    --secondary-font: "Outfit", sans-serif;
+    --font-logo-urbanist: "Urbanist", sans-serif;
+    --font-logo-inter: "Inter", sans-serif;
+
+}

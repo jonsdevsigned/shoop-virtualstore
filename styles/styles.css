@@ -1,7 +1,7 @@
 @import url(./root.css);
 
 body{
-    background: var(--background);
+    background: var(--base-color);
     padding: 1.5rem 2rem;
 }
 
@@ -12,15 +12,28 @@ header {
     gap: 1.2rem;
 }
 
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 14rem;
+}
+
 h1 {
     font-family: var(--title-font);
-    font-size: 5rem;
-    background: linear-gradient(45deg, #283618, #648b33, #283618);
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #023047, #8ecae6, #023047);
     background-size: 500%;
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: brillo 20s infinite;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-right: 2.2rem;
 }
 
 @keyframes brillo {
@@ -36,11 +49,11 @@ h1 {
 }
 
 a {
-    color: var(--background);
+    color: var(--base-color);
     text-align: center;
     font-family: var(--primary-font);
     font-size: 1.5rem;
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     padding: .5rem 0;
     display: flex;
     align-items: center;

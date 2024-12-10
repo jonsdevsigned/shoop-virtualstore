@@ -1,5 +1,9 @@
 @import url(./root.css);
 
+header {
+    margin: 1.5rem 0
+}
+
 .add__product {
     height: 100vh;
     display: flex;
@@ -15,6 +19,8 @@ h2 {
     font-weight: 700;
     color: var(--box-color);
     margin: 2rem 0 1rem 0;
+    border-bottom: 2px solid;
+    border-top: 2px solid ;
 }
 
 form {
@@ -40,20 +46,13 @@ form div label{
 }
 
 
-form div input, #description {
+form div input {
     width: 20rem;
     border-radius: 10rem;
-    padding-left: .5rem;
+    padding-left: .8rem;
     height: 2rem;
     border: 1px solid var(--box-color);
-    background-color: var(--base-color);
-}
-
-#description {
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    resize: none;
+    background-color: var(--transparent);
 }
 
 form button {
@@ -79,6 +78,10 @@ footer {
 }
 
 @media (min-width: 500px) {
+
+    header {
+        justify-content: center;
+    }
     
     .add__product {
         padding: 0 8rem;

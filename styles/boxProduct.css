@@ -1,6 +1,6 @@
 .content__products {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap-reverse row-reverse;
     gap: 2rem;
     justify-content: space-evenly;
     margin: 2rem 0;
@@ -27,7 +27,8 @@
 
 .box__product div {
     display: flex;
-    flex-direction: column;align-items: start;
+    flex-direction: column;
+    align-items: start;
     gap: .5rem;
 }
 
@@ -49,6 +50,7 @@ h3 {
 .box__product img {
     border-radius: 0 3rem;
     border: 3px solid var(--base-color);
+    max-height: 400px;
 }
 
 .box__product p {

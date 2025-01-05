@@ -1,5 +1,3 @@
-import { conectApi } from "./conect.js";
-
 const form = document.querySelector('.form__addProduct');
 
 form.addEventListener('submit', async (event) => {
@@ -8,22 +6,24 @@ form.addEventListener('submit', async (event) => {
 
     const title = document.querySelector('#title').value;
     const description = document.querySelector('#description').value;
-    const price = `$${document.querySelector('#price').value}`;
+    const price = `$${parseFloat(document.querySelector('#price').value)}`;
     const image = document.querySelector('#image').value;
 
-    try {
+    const newProduct = {
+        id: Date.now(),
+        title,
+        price,
+        image,
+        description
+    };
+    
+    const products = JSON.parse(localStorage.getItem('products')) || [];
+    products.push(newProduct);
+    localStorage.setItem('products', JSON.stringify(products));
 
-        const newProduct = await conectApi.addProduct(title, price, image, description);
+    console.log('Producto agregado:', newProduct);
+    alert('Producto agregado exitosamente!');
 
-        if(newProduct){
-            window.location.href= '../index.html';
-            form.reset();
-        }
-
-    } catch(error) {
-
-        console.error('Error adding product:', error);
-        alert('Could not add the product');
-
-    }
+    form.reset();
+    window.location.href= '/index.html';
 });

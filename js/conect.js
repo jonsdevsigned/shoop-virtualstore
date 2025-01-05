@@ -1,17 +1,15 @@
 async function listProducts() {
     const conectApi = await fetch('https://fakestoreapi.com/products?limit=5');
     const apiProducts = await conectApi.json();
+   
+    const localProducts = JSON.parse(localStorage.getItem('products')) || [];
 
-    const conectLocale = await fetch('../db/products.json');
-    const localeProducts = await conectLocale.json();
-    const localeData = await localeProducts.products
-    
-    return [...apiProducts, ...localeData];
+    return [...apiProducts, ...localProducts];
 }
 
-async function addProduct(title, price, image, description) {
+async function addProduct(title, price, image, description, id) {
     try {
-        const newProduct = {title, price, image, description};
+        const newProduct = {title, price, image, description, id};
     
         const conect = await fetch('http://localhost:3001/products', {
             method: 'POST',

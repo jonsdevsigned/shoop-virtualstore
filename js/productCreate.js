@@ -25,5 +25,5 @@ form.addEventListener('submit', async (event) => {
     alert('Producto agregado exitosamente!');
 
     form.reset();
-    window.location.href= '/index.html';
+    window.location.href= 'https://jonsdevsigned.github.io/shoop-virtualstore/';
 });
